@@ -57,12 +57,12 @@ long seed = nanoTime ^ freeMemory ^ threadCount ^ secureRandomLong;
 
 ```mermaid
 graph TD
-    A[User Calls nextInt()] --> B{Check Rotation Needed?}
-    B -->|Yes| C[Select Strategy via Environmental Chaos]
-    C --> D[Reseed with Composite Entropy]
-    D --> E[Execute Strategy Logic]
+    A[User Calls nextInt] --> B{Check Rotation}
+    B -->|Yes| C[Select Strategy]
+    C --> D[Reseed]
+    D --> E[Execute Logic]
     B -->|No| E
-    E --> F[Return Unpredictable Result]
+    E --> F[Return Result]
 ```
 ## 🚀 Usage
 Installation
