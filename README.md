@@ -56,12 +56,12 @@ long seed = nanoTime ^ freeMemory ^ threadCount ^ secureRandomLong;
 ## 🛡️ Anti-Prediction Architecture
 ```mermaid
 graph TD
-A[User Calls nextInt()] --> B{Check Rotation Needed}
-B -->|Yes| C[Select Strategy via Environmental Chaos]
-C --> D[Reseed with Composite Entropy]
-D --> E[Execute Strategy Logic]
-B -->|No| E
-E --> F[Return Unpredictable Result]
+    A[User Calls nextInt()] --> B{Check Rotation Needed}
+    B -->|Yes| C[Select Strategy via Environmental Chaos]
+    C --> D[Reseed with Composite Entropy]
+    D --> E[Execute Strategy Logic]
+    B -->|No| E
+    E --> F[Return Unpredictable Result]
 ```
 
 ## 🚀 Usage
