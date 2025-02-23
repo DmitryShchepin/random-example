@@ -54,6 +54,7 @@ long seed = nanoTime ^ freeMemory ^ threadCount ^ secureRandomLong;
 ```
 
 ## 🛡️ Anti-Prediction Architecture
+
 ```mermaid
 graph TD
     A[User Calls nextInt()] --> B{Check Rotation Needed?}
@@ -63,7 +64,6 @@ graph TD
     B -->|No| E
     E --> F[Return Unpredictable Result]
 ```
-
 ## 🚀 Usage
 Installation
 Add as Maven dependency:
