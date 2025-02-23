@@ -1,0 +1,18 @@
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+######################
+# Maven
+######################
+/log/
+/target/
+/*/target/
+/*/*/target/
+dependency-reduced-pom.xml
