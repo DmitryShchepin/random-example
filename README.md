@@ -93,7 +93,7 @@ System.out.println("Active Strategy: " + randomManager.getCurrentStrategy().getC
 ### Workflow Cycle
 
 1. **Entropy Harvesting**  
-   Collects 12+ system metrics including:
+   Collects system metrics including:
     - Nano-second clock precision
     - Memory utilization statistics
     - Thread activity levels
